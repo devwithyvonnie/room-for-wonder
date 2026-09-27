@@ -24,8 +24,12 @@ function Footer() {
       </div>
 
       <p className="font-body text-xs text-offwhite/60 mt-8 text-center">
+      Universal elements and all related indicia TM & © 2026 Universal Studios. All rights reserved.
+      </p>
+      <p className="font-body text-xs text-offwhite/60 mt-8 text-center">
         © {new Date().getFullYear()} Room for Wonder Travel Co., LLC is an independent agency associated with WorldVia Travel Network.
       </p>
+      
     </footer>
   );
 }

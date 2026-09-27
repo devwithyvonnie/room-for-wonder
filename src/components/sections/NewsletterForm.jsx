@@ -37,13 +37,13 @@ function NewsletterForm({ compact = false }) {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Your email"
-        className={`flex-1 rounded-full font-body ${
-          compact ? "px-4 py-2 text-sm" : "px-4 py-3"
+        className={`flex-1 rounded-full font-body bg-offwhite text-ink px-4 ${
+          compact ? "py-2 text-sm" : "py-3"
         }`}
         autoComplete="off"
       />
 
-      <Button type="submit" variant="secondary">
+      <Button type="submit" variant="primary">
         {compact ? "Sign Up" : "Notify Me"}
       </Button>
     </form>
