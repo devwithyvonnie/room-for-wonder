@@ -29,13 +29,13 @@ function Nav() {
 
         <div className="hidden md:flex items-center gap-4">
           <Link to="/request-a-quote">
-            <Button variant="primary">Request a Quote</Button>
+            <Button variant="primary">Plan Your Vacation with Us</Button>
           </Link>
         </div>
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden font-display text-2xl text-plum"
+          className="md:hidden flex items-center justify-center w-11 h-11 rounded-full bg-orchid/15 text-plum text-xl"
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={menuOpen}
         >
@@ -44,13 +44,24 @@ function Nav() {
       </div>
 
       {menuOpen && (
-        <nav className="md:hidden flex flex-col gap-4 mt-6 font-body text-ink">
-          {links.map((link) => (
-            <Link key={link.to} to={link.to} onClick={() => setMenuOpen(false)}>
-              {link.label}
-            </Link>
-          ))}
-          <Link to="/request-a-quote" onClick={() => setMenuOpen(false)}>
+        <nav className="md:hidden absolute left-4 right-4 mt-4 bg-offwhite border-2 border-orchid/30 rounded-3xl shadow-lg p-8 z-10">
+
+          <div className="flex flex-col">
+            {links.map((link, i) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                onClick={() => setMenuOpen(false)}
+                className={`font-display text-xl text-ink py-3 ${
+                  i !== links.length - 1 ? 'border-b border-dashed border-plum/30' : ''
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+
+          <Link to="/request-a-quote" onClick={() => setMenuOpen(false)} className="block mt-6">
             <Button variant="primary">Request a Quote</Button>
           </Link>
         </nav>

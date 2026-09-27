@@ -1,14 +1,14 @@
 const steps = [
-    { number: '01', title: 'Tell us your vision', body: 'Placeholder — the initial consultation.' },
-    { number: '02', title: 'We craft your itinerary', body: 'Placeholder — the planning phase.' },
-    { number: '03', title: 'You travel, we support', body: 'Placeholder — ongoing support during the trip.' },
+    { number: '01', title: "Tell us about your vacation", body: "Start by sharing a little about your family, your travel plans, and what matters most to you. Your travel agent will get to know what you're looking for so we can recommend options that truly fit." },
+    { number: '02', title: "Choose the vacation that is right for you", body: "We'll narrow down the possibilities and provide thoughtful recommendations based on your priorities, preferences, and budget. Once you've found the right fit, we'll take care of the booking details and guide you through what comes next." },
+    { number: '03', title: "We will be with you along the way", body: "From important deadlines and planning details to questions that come up before and during your vacation, you'll have a travel agent in your corner throughout the process." },
   ];
   
   function HowItWorks() {
     return (
       <div className="px-8 py-20 max-w-4xl mx-auto">
-        <p className="font-script text-3xl text-coral mb-2">The Journey</p>
-        <h1 className="font-display text-5xl text-ink mb-12">How It Works</h1>
+        <p className="font-script text-3xl text-coral-deep mb-2">The Journey</p>
+        <h1 className="font-display text-5xl text-ink mb-12">Planning Made Easier</h1>
   
         <div className="space-y-12">
           {steps.map((step) => (

@@ -80,7 +80,7 @@ function RequestQuote() {
   if (submitted) {
     return (
       <div className="px-8 py-32 max-w-2xl mx-auto text-center">
-        <p className="font-script text-3xl text-coral mb-4">Chapter Begun</p>
+        <p className="font-script text-3xl text-coral-deep mb-4">Chapter Begun</p>
         <h1 className="font-display text-4xl text-ink mb-4">
           We've got your story started
         </h1>
@@ -94,7 +94,7 @@ function RequestQuote() {
 
   return (
     <div className="px-8 py-20 max-w-3xl mx-auto">
-      <p className="font-script text-3xl text-coral mb-2">Let's Begin</p>
+      <p className="font-script text-3xl text-coral-deep mb-2">Let's Begin</p>
       <h1 className="font-display text-5xl text-ink mb-12">Request a Quote</h1>
 
       <form onSubmit={handleSubmit} className="space-y-16">
@@ -112,6 +112,7 @@ function RequestQuote() {
               label="Email"
               name="email"
               type="email"
+              autoComplete="email"
               value={form.email}
               onChange={handleChange}
               required
@@ -120,6 +121,7 @@ function RequestQuote() {
               label="Phone"
               name="phone"
               type="tel"
+              autoComplete="tel"
               value={form.phone}
               onChange={handleChange}
             />
@@ -131,10 +133,11 @@ function RequestQuote() {
             />
           </div>
           <div>
-            <label className="block font-body text-sm text-ink mb-1">
+            <label htmlFor="agentId" className="block font-body text-sm text-ink mb-1">
               Who would you like to work with?
             </label>
             <select
+              id="agentId"
               name="agentId"
               value={form.agentId}
               onChange={handleChange}
@@ -180,10 +183,11 @@ function RequestQuote() {
           <h2 className="font-display text-2xl text-plum mb-6">Your Trip</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             <div>
-              <label className="block font-body text-sm text-ink mb-1">
+              <label htmlFor="destination" className="block font-body text-sm text-ink mb-1">
                 Destination
               </label>
               <select
+                id="destination"
                 name="destination"
                 value={form.destination}
                 onChange={handleChange}
@@ -191,17 +195,25 @@ function RequestQuote() {
                 className="w-full px-4 py-3 rounded-xl border border-ink/20 font-body">
                 <option value="">Select one</option>
                 <option value="wdw">Walt Disney World</option>
-<option value="disneyland">Disneyland</option>
-<option value="disney-cruise-line">Disney Cruise Line</option>
-<option value="aulani">Aulani</option>
-<option value="vero-beach">Disney's Vero Beach Resort</option>
-<option value="hilton-head">Disney's Hilton Head Island Resort</option>
-<option value="adventures-by-disney">Adventures by Disney</option>
-<option value="national-geographic">National Geographic Expeditions</option>
-<option value="universal-orlando">Universal Orlando</option>
-<option value="universal-hollywood">Universal Studios Hollywood</option>
-<option value="universal-kids">Universal Kids Resort</option>
-<option value="not-sure">Not sure yet</option>
+                <option value="disneyland">Disneyland</option>
+                <option value="disney-cruise-line">Disney Cruise Line</option>
+                <option value="aulani">Aulani</option>
+                <option value="vero-beach">Disney's Vero Beach Resort</option>
+                <option value="hilton-head">
+                  Disney's Hilton Head Island Resort
+                </option>
+                <option value="adventures-by-disney">
+                  Adventures by Disney
+                </option>
+                <option value="national-geographic">
+                  National Geographic Expeditions
+                </option>
+                <option value="universal-orlando">Universal Orlando</option>
+                <option value="universal-hollywood">
+                  Universal Studios Hollywood
+                </option>
+                <option value="universal-kids">Universal Kids Resort</option>
+                <option value="not-sure">Not sure yet</option>
               </select>
             </div>
             <Field
@@ -251,16 +263,17 @@ function RequestQuote() {
   );
 }
 
-function Field({ label, className = "", ...inputProps }) {
+function Field({ label, name, className = '', ...inputProps }) {
   return (
     <div className={className}>
-      <label className="block font-body text-sm text-ink mb-1">{label}</label>
+      <label htmlFor={name} className="block font-body text-sm text-ink mb-1">{label}</label>
       <input
+        id={name}
+        name={name}
         {...inputProps}
         className="w-full px-4 py-3 rounded-xl border border-ink/20 font-body"
       />
     </div>
   );
 }
-
 export default RequestQuote;

@@ -23,7 +23,7 @@ const faqs = [
         Disney's Vero Beach Resort, Disney's Hilton Head Island Resort, Adventures by Disney, National
         Geographic Expeditions, Universal Orlando Resort, Universal Studios Hollywood, and Universal Kids
         Resort, with more destinations coming soon!{' '}
-        <Link to="/destinations#newsletter" className="text-coral underline">
+        <Link to="/destinations#newsletter" className="text-coral-deep underline">
           Subscribe to our email newsletter
         </Link>{' '}
         for updates as we expand. Not sure which destination is right for your family? That's okay, too.
@@ -69,7 +69,7 @@ const faqs = [
     a: (
       <>
         Getting started is easy! Complete our{' '}
-        <Link to="/request-a-quote" className="text-coral underline">
+        <Link to="/request-a-quote" className="text-coral-deep underline">
           Plan Your Vacation With Us
         </Link>{' '}
         form and tell us a little about your travel party, what you're considering, and what matters most
@@ -91,7 +91,7 @@ function FAQs() {
 
   return (
     <div className="px-8 py-20 max-w-3xl mx-auto">
-      <p className="font-script text-3xl text-coral mb-2">Good to Know</p>
+      <p className="font-script text-3xl text-coral-deep mb-2">Good to Know</p>
       <h1 className="font-display text-5xl text-ink mb-12">FAQs</h1>
 
       <div className="space-y-4">

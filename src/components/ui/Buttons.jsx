@@ -1,7 +1,7 @@
 function Button({ children, variant = 'primary', ...props }) {
     const base = 'px-6 py-3 rounded-full font-body font-medium transition-colors';
     const variants = {
-      primary: 'bg-coral text-offwhite hover:bg-plum',
+      primary: 'bg-coral text-ink hover:bg-plum hover:text-offwhite',
       secondary: 'bg-transparent border-2 border-plum text-plum hover:bg-plum hover:text-offwhite',
     };
   

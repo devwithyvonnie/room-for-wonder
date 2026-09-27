@@ -5,49 +5,49 @@ const disneyDestinations = [
   {
     name: 'Walt Disney World Resort',
     location: 'Orlando, Florida',
-    blurb: 'Placeholder — four theme parks, two water parks, and endless magic in Central Florida.',
+    blurb: 'Four theme parks, two water parks, incredible resorts, dining, and experiences come together for a vacation with countless ways to make it your own.',
     image: 'https://placehold.co/600x400/61436F/FAF7F3?text=Walt+Disney+World',
   },
   {
     name: 'Disneyland Resort',
     location: 'Anaheim, California',
-    blurb: 'Placeholder — where it all began, on the West Coast.',
+    blurb: 'Experience the original Disney destination with two theme parks, three Disney Resort hotels, and plenty of magic packed into a more compact getaway.',
     image: 'https://placehold.co/600x400/9D6FB0/FAF7F3?text=Disneyland',
   },
   {
     name: 'Disney Cruise Line',
     location: 'Multiple departure ports',
-    blurb: 'Placeholder — Disney magic at sea, with itineraries around the world.',
+    blurb: 'Set sail for destinations around the world with Disney entertainment, imaginative dining, family-friendly experiences, and plenty for adults to enjoy, too.',
     image: 'https://placehold.co/600x400/61436F/FAF7F3?text=Disney+Cruise+Line',
   },
   {
     name: 'Aulani, A Disney Resort & Spa',
     location: "Ko Olina, O'ahu, Hawai'i",
-    blurb: 'Placeholder — a Disney resort experience in Hawai\'i.',
+    blurb: 'Experience the beauty and culture of Hawaiʻi with Disney storytelling, family activities, relaxing resort amenities, and a beautiful oceanfront setting.',
     image: 'https://placehold.co/600x400/9D6FB0/FAF7F3?text=Aulani',
   },
   {
     name: "Disney's Vero Beach Resort",
     location: 'Vero Beach, Florida',
-    blurb: "Placeholder — a relaxed, beachfront Disney escape on Florida's Treasure Coast.",
+    blurb: "Enjoy a relaxed beachfront escape on Florida’s Atlantic Coast with family activities, recreation, and plenty of time to slow down together.",
     image: 'https://placehold.co/600x400/61436F/FAF7F3?text=Vero+Beach',
   },
   {
     name: "Disney's Hilton Head Island Resort",
     location: 'Hilton Head Island, South Carolina',
-    blurb: 'Placeholder — a low-country Disney retreat.',
+    blurb: 'Unwind in a charming Lowcountry setting with family activities, outdoor recreation, and easy access to the beaches of Hilton Head Island.',
     image: 'https://placehold.co/600x400/9D6FB0/FAF7F3?text=Hilton+Head',
   },
   {
     name: 'Adventures by Disney',
     location: 'Worldwide',
-    blurb: 'Placeholder — guided group vacations to destinations around the globe.',
+    blurb: 'Explore destinations around the world through guided vacations that combine immersive experiences, thoughtful details, and the ease of having much of the planning handled for you.',
     image: 'https://placehold.co/600x400/61436F/FAF7F3?text=Adventures+by+Disney',
   },
   {
     name: 'National Geographic Expeditions',
     location: 'Worldwide',
-    blurb: 'Placeholder — expedition-style travel in partnership with National Geographic.',
+    blurb: 'Discover extraordinary destinations through expertly guided trips designed around exploration, culture, wildlife, and a deeper connection to the places you visit.',
     image: 'https://placehold.co/600x400/9D6FB0/FAF7F3?text=National+Geographic',
   },
 ];
@@ -56,19 +56,19 @@ const universalDestinations = [
   {
     name: 'Universal Orlando Resort',
     location: 'Orlando, Florida',
-    blurb: 'Placeholder — thrilling rides and immersive worlds in Orlando.',
+    blurb: 'Four incredible theme parks, immersive entertainment, themed hotels, and plenty of ways to enjoy a complete week-long vacation.',
     image: 'https://placehold.co/600x400/087887/FAF7F3?text=Universal+Orlando',
   },
   {
     name: 'Universal Studios Hollywood',
     location: 'Universal City, California',
-    blurb: 'Placeholder — the original movie-magic theme park.',
+    blurb: 'Step into favorite movies and stories with immersive attractions, entertainment, and the legendary Studio Tour in the heart of Southern California.',
     image: 'https://placehold.co/600x400/E87870/FAF7F3?text=Universal+Hollywood',
   },
   {
     name: 'Universal Kids Resort',
     location: 'Frisco, Texas',
-    blurb: 'Placeholder — a Universal destination designed for younger kids and families.',
+    blurb: 'Designed especially for families with young children, with kid-friendly attractions, interactive play, favorite characters, and an on-site hotel with private park access.',
     image: 'https://placehold.co/600x400/087887/FAF7F3?text=Universal+Kids+Resort',
   },
 ];
@@ -106,7 +106,7 @@ function Destinations() {
 
   return (
     <div className="px-8 py-20 max-w-6xl mx-auto">
-      <p className="font-script text-3xl text-coral mb-2">Magically Curated Travel</p>
+      <p className="font-script text-3xl text-coral-deep mb-2">Thoughtful planning. Unforgettable vacations.</p>
       <h1 className="font-display text-5xl text-ink mb-12">Where We Plan</h1>
 
       <DestinationGroup title="Disney Destinations" destinations={disneyDestinations} />
@@ -117,7 +117,7 @@ function Destinations() {
     More destinations coming soon
   </h2>
   <p className="font-body text-offwhite/80 mb-6">
-    Be the first to know when we expand beyond Disney and Universal.
+    We’re thoughtfully expanding where we plan. Join our email list to be the first to hear about new cruise lines, resorts, and vacation experiences.
   </p>
   <NewsletterForm />
 </div>

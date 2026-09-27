@@ -19,7 +19,7 @@ const testimonials = [
   function KindWords() {
     return (
       <div className="px-8 py-20 max-w-6xl mx-auto">
-        <p className="font-script text-3xl text-coral mb-2">From Our Families</p>
+        <p className="font-script text-3xl text-coral-deep mb-2">From Our Families</p>
         <h1 className="font-display text-5xl text-ink mb-12">Kind Words</h1>
   
         <div className="grid md:grid-cols-3 gap-8">
