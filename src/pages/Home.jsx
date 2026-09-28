@@ -9,8 +9,8 @@ function Home() {
       <Hero />
 
       <ChapterSpread
-        chapterLabel="Chapter One"
-        heading="Planning should feel exciting, too."
+        chapterLabel="Planning should feel exciting, too."
+        heading=""
         body="Planning a vacation should be part of the excitement, not another thing on your never-ending to-do list. 
         Your Room for Wonder travel agent will help you sort through the options, make thoughtful recommendations based 
         on what matters to your family, and keep track of the details along the way. You’ll stay involved in the decisions 
@@ -20,8 +20,8 @@ function Home() {
       />
 
       <ChapterSpread
-        chapterLabel="Chapter Two"
-        heading="Where will wonder take you?"
+        chapterLabel="Where will wonder take you?"
+        heading=""
         body="From magical theme park vacations to relaxing days at sea, your next vacation can look completely different 
         from the last. Room for Wonder specializes in Disney Travel Company packages, Universal destinations, and cruises, 
         with personalized planning designed around the way your family wants to travel."

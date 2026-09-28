@@ -23,8 +23,8 @@ const cardVariants = {
 function KindWords() {
   return (
     <div className="px-8 py-20 max-w-6xl mx-auto">
-      <p className="font-script text-4xl text-coral-deep mb-2">From Our Families</p>
-      <h1 className="font-display text-5xl text-ink mb-12">Kind Words</h1>
+      <p className="font-script text-4xl text-coral-deep mb-2">From our guests</p>
+      <h1 className="font-display text-5xl text-ink mb-12">Notes from happy travelers</h1>
 
       <motion.div
         className="grid md:grid-cols-3 gap-8 mb-20"

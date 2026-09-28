@@ -2,15 +2,15 @@ import { Link } from 'react-router-dom';
 import Button from '../components/ui/Buttons';
 
 const steps = [
-  { number: '01', title: 'Tell us about your vacation', body: "Start by sharing a little about your family, your travel plans, and what matters most to you. Your travel agent will get to know what you're looking for so we can recommend options that truly fit." },
-  { number: '02', title: 'Choose the vacation that is right for you', body: "We'll narrow down the possibilities and provide thoughtful recommendations based on your priorities, preferences, and budget. Once you've found the right fit, we'll take care of the booking details and guide you through what comes next." },
-  { number: '03', title: 'We will be with you along the way', body: "From important deadlines and planning details to questions that come up before and during your vacation, you'll have a travel agent in your corner throughout the process." },
+  { number: '01', title: 'Tell us about your ideal vacation', body: "Start by sharing a little about your family, your travel plans, and what matters most to you. Your travel agent will get to know what you're looking for so we can recommend options that truly fit." },
+  { number: '02', title: 'Once you’ve selected the right fit…', body: "We'll narrow down the possibilities and provide thoughtful recommendations based on your priorities, preferences, and budget. Once you've found the right fit, we'll take care of the booking details and guide you through what comes next." },
+  { number: '03', title: "We'll be with you...", body: "From important deadlines and planning details to questions that come up before and during your vacation, you'll have a travel agent in your corner throughout the process." },
 ];
 
 function HowItWorks() {
   return (
     <div className="px-8 py-20 max-w-6xl mx-auto">
-      <p className="font-script text-4xl text-coral-deep mb-2">The Journey</p>
+      <p className="font-script text-4xl text-coral-deep mb-2">What to expect</p>
       <h1 className="font-display text-5xl text-ink mb-12">Planning Made Easier</h1>
 
       <div className="grid md:grid-cols-2 gap-12 mb-20 items-center">

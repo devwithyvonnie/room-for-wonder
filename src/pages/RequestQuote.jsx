@@ -112,10 +112,10 @@ function RequestQuote() {
   if (submitted) {
     return (
       <div className="px-8 py-32 max-w-2xl mx-auto text-center">
-        <p className="font-script text-4xl text-coral-deep mb-4">Chapter Begun</p>
-        <h1 className="font-display text-4xl text-ink mb-4">We've got your story started</h1>
+        <p className="font-script text-4xl text-coral-deep mb-4">Request received</p>
+        <h1 className="font-display text-4xl text-ink mb-4">Your vacation planning starts now</h1>
         <p className="font-body text-ink">
-          Thank you, {form.parentName || 'friend'} — we'll be in touch within 1–2 business days to start planning.
+          Thank you, {form.parentName || 'friend'} — Your quote request is on its way to Room for Wonder. We’ll be in touch by the end of the next business day to learn more about your plans and get started.
         </p>
       </div>
     );

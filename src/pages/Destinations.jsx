@@ -95,7 +95,7 @@ function Destinations() {
 
   return (
     <div className="px-8 py-20 max-w-6xl mx-auto">
-      <p className="font-script text-3xl text-coral-deep mb-2">Thoughtful planning. Unforgettable vacations.</p>
+      <p className="font-script text-4xl text-coral-deep mb-2">Thoughtful planning. Unforgettable vacations.</p>
       <h1 className="font-display text-5xl text-ink mb-8">Where We Plan</h1>
 
       <div className="flex gap-3 mb-12">

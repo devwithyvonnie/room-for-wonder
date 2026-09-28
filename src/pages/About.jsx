@@ -22,8 +22,8 @@ function About() {
       <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
         <div>
           <p className="font-script text-3xl text-coral-deep mb-2">Why Room for Wonder</p>
-          <h1 className="font-display text-5xl text-ink mb-8">Room for Wonder was built on one idea</h1>
-          <p className="font-body text-ink mb-4">the person planning the vacation deserves to enjoy it, too.</p>
+          <h1 className="font-display text-5xl text-ink mb-8">Room for Wonder was built on one idea: <br /> <br />
+          You deserve to enjoy the vacation, too.</h1>
           <p className="font-body text-ink mb-4">
             We know how easy it is for a vacation that's supposed to bring your family together to become another list of decisions, deadlines, and details to manage. That's where we come in.
           </p>
@@ -38,11 +38,11 @@ function About() {
         />
       </div>
 
-      <h2 className="font-display text-4xl text-plum mb-8 text-center">The Room for Wonder Difference</h2>
+      <h2 className="font-display text-5xl text-plum mb-8 text-center">The Room for Wonder Difference</h2>
       <div className="grid md:grid-cols-3 gap-8 mb-20">
         {differences.map((item) => (
-          <div key={item.title} className="bg-orchid/10 rounded-3xl p-8">
-            <p className="font-script text-3xl text-orchid mb-2">{item.title}</p>
+          <div key={item.title} className="bg-plum/10 rounded-3xl p-8">
+            <p className="font-script text-4xl text-orchid mb-2">{item.title}</p>
             <p className="font-body text-ink">{item.body}</p>
           </div>
         ))}

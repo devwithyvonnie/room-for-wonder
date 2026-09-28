@@ -148,7 +148,7 @@ function FAQs() {
       <div className="space-y-12">
         {faqCategories.map((category) => (
           <div key={category.label}>
-            <p className="font-script text-3xl text-plum mb-4">{category.label}</p>
+            <p className="font-display text-3xl text-plum mb-4">{category.label}</p>
             <div className="space-y-4">
               {category.questions.map((item) => (
                 <FaqItem
