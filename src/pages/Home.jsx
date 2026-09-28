@@ -15,7 +15,7 @@ function Home() {
         Your Room for Wonder travel agent will help you sort through the options, make thoughtful recommendations based 
         on what matters to your family, and keep track of the details along the way. You’ll stay involved in the decisions 
         that matter to you, while we help make the rest feel easier."
-        image={{ src: 'public/images/C9B87F40-AFA2-441F-B408-8A84F5055663_1_105_c.jpeg', alt: 'Guest with hands holding Minnie Mouse Ears in front of Celebrate 70 years at Disneyland sign' }}
+        image={{ src: '/images/C9B87F40-AFA2-441F-B408-8A84F5055663_1_105_c.jpeg', alt: 'Guest with hands holding Minnie Mouse Ears in front of Celebrate 70 years at Disneyland sign' }}
         imageSide="left"
       />
 
@@ -25,7 +25,7 @@ function Home() {
         body="From magical theme park vacations to relaxing days at sea, your next vacation can look completely different 
         from the last. Room for Wonder specializes in Disney Travel Company packages, Universal destinations, and cruises, 
         with personalized planning designed around the way your family wants to travel."
-        image={{ src: 'public/images/8089D729-9E38-4BA2-8838-C419BC40370F_1_105_c.jpeg', alt: 'Guests standing with Vikings while touching a dragon' }}
+        image={{ src: '/images/8089D729-9E38-4BA2-8838-C419BC40370F_1_105_c.jpeg', alt: 'Guests standing with Vikings while touching a dragon' }}
         imageSide="right"
       />
 

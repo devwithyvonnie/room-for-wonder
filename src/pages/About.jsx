@@ -32,7 +32,7 @@ function About() {
           </p>
         </div>
         <img
-          src="public/images/8496484F-4EB2-4241-BAF0-F36646CF58B4_1_102_o.jpeg"
+          src="/images/8496484F-4EB2-4241-BAF0-F36646CF58B4_1_102_o.jpeg"
           alt="Guests blowing confetti in front of Cinderella Castle at Walt Disney World"
           className="w-full rounded-3xl object-cover max-h-[600px]"
         />
