@@ -31,7 +31,7 @@ function HowItWorks() {
         </div>
 
         <img
-          src="src/assets/images/PNG image.jpeg"
+          src="public/images/PNG image.jpeg"
           alt="Owner working on guest's quote."
           className="w-full rounded-3xl object-cover max-h-[700px]"
         />
