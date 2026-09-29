@@ -26,7 +26,7 @@ export const agents = [
     specialization:
       "Currently completing her Disney and Universal specialist training.",
     bio: [
-      "Here’s her bio… Hi, I’m Amanda! 💜 I’m a wife, dog mom, Disney lover, and someone who truly believes that the best memories are the ones you make together.",
+      "Hi, I’m Amanda! 💜 I’m a wife, dog mom, Disney lover, and someone who truly believes that the best memories are the ones you make together.",
       "Disney has always held a special place in my heart, and Disneyland is my happy place! From the magic of the parks to the little details that make a trip unforgettable, I love everything about the Disney experience. I’m especially passionate about helping families turn their Disney vacation dreams into a trip they’ll be talking about for years to come.",
       "I know that every traveler is different, which is why I believe your Disney vacation should feel uniquely you. I’ll take the time to learn what matters most to you and help create an experience that fits your family, your interests, and your vacation dreams.",
       "When I’m not dreaming up Disney vacations, you’ll usually find me spending time with my husband and our dachshund, Slinky, listening to music, reading books, or working as a medical assistant in the joint-replacement field.",
