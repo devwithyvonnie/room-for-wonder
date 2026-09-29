@@ -15,7 +15,7 @@ function Home() {
         Your Room for Wonder travel agent will help you sort through the options, make thoughtful recommendations based 
         on what matters to your family, and keep track of the details along the way. You’ll stay involved in the decisions 
         that matter to you, while we help make the rest feel easier."
-        image={{ src: '/images/C9B87F40-AFA2-441F-B408-8A84F5055663_1_105_c.jpeg', alt: 'Guest with hands holding Minnie Mouse Ears in front of Celebrate 70 years at Disneyland sign' }}
+        image={{ src: '/images/9F33D586-EEAA-4E9A-838F-614CA019ED7DIMG_0704.jpg', alt: '' }}
         imageSide="left"
       />
 

@@ -17,7 +17,7 @@ function ChapterSpread({ image, chapterLabel, heading, body, imageSide }) {
         <img
           src={image.src}
           alt={image.alt}
-          className="w-full rounded-3xl object-cover"
+          className="w-full max-h-[500px] rounded-3xl object-cover"
         />
       </div>
       <div className="w-full md:w-1/2 px-4 md:px-8">

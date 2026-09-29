@@ -3,15 +3,15 @@ import NewsletterForm from '../components/sections/NewsletterForm';
 
 const disneyDestinations = [
   {
-    name: 'Walt Disney World Resort',
+    name: <>Walt Disney World<sup className="text-[0.5em]">®</sup> Resort</>,
     location: 'Orlando, Florida',
-    blurb: 'Four theme parks, two water parks, incredible resorts, dining, and experiences come together for a vacation with countless ways to make it your own.',
+    blurb: 'Four theme parks, two water parks, incredible Resort hotels, dining, golf courses, and experiences come together for a vacation with countless ways to make it your own.',
     image: '/images/Screenshot 2026-09-25 at 1.18.48 PM.png',
   },
   {
-    name: 'Disneyland Resort',
+    name: <>Disneyland<sup className="text-[0.5em]">®</sup> Resort</>,
     location: 'Anaheim, California',
-    blurb: 'Experience the original Disney destination with two theme parks, three Disney Resort hotels, and plenty of magic packed into a more compact getaway.',
+    blurb: 'Experience the original Disney destination with two theme parks, three Resort hotels, and plenty of magic packed into a more compact getaway.',
     image: '/images/Screenshot 2026-09-25 at 1.21.50 PM.png',
   },
   {
@@ -21,9 +21,9 @@ const disneyDestinations = [
     image: '/images/Screenshot 2026-09-25 at 1.23.01 PM.png',
   },
   {
-    name: 'Aulani, A Disney Resort & Spa',
-    location: "Ko Olina, O'ahu, Hawai'i",
-    blurb: 'Experience the beauty and culture of Hawaiʻi with Disney storytelling, family activities, relaxing resort amenities, and a beautiful oceanfront setting.',
+    name: 'AULANI, A Disney Resort & Spa in Ko Olina, Hawai‘i',
+    location: "Ko Olina, O‘ahu, Hawai‘i",
+    blurb: 'Experience the beauty and culture of Hawai‘i with Disney storytelling, family activities, relaxing Resort amenities, and a beautiful oceanfront setting.',
     image: '/images/Screenshot 2026-09-25 at 1.24.07 PM.png',
   },
   {
@@ -39,9 +39,9 @@ const disneyDestinations = [
     image: '/images/Screenshot 2026-09-25 at 1.30.49 PM.png',
   },
   {
-    name: 'Adventures by Disney',
+    name: <>Adventures by Disney<sup className="text-[0.5em]">®</sup></>,
     location: 'Worldwide',
-    blurb: 'Explore destinations around the world through guided vacations that combine immersive experiences, thoughtful details, and the ease of having much of the planning handled for you.',
+    blurb: 'Explore destinations around the world through guided group vacations that combine immersive experiences, thoughtful details, and the ease of having much of the planning handled for you.',
     image: '/images/Screenshot 2026-09-25 at 1.26.51 PM.png',
   },
   {
@@ -94,7 +94,7 @@ function Destinations() {
   const activeData = categories.find((c) => c.key === activeCategory).data;
 
   return (
-    <div className="px-8 py-20 max-w-6xl mx-auto">
+    <div className="px-8 max-w-6xl mx-auto">
       <p className="font-script text-4xl text-coral-deep mb-2">Thoughtful planning. Unforgettable vacations.</p>
       <h1 className="font-display text-5xl text-ink mb-8">Where We Plan</h1>
 

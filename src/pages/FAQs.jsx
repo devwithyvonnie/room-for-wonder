@@ -141,7 +141,7 @@ function FAQs() {
   }
 
   return (
-    <div className="px-8 py-20 max-w-3xl mx-auto">
+    <div className="px-8 max-w-3xl mx-auto">
       <p className="font-script text-4xl text-coral-deep mb-2">Good to Know</p>
       <h1 className="font-display text-5xl text-ink mb-12">FAQs</h1>
 

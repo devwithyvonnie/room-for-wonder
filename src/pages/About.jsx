@@ -18,7 +18,7 @@ const differences = [
 
 function About() {
   return (
-    <div className="px-8 py-20 max-w-6xl mx-auto">
+    <div className="px-8 max-w-6xl mx-auto">
       <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
         <div>
           <p className="font-script text-3xl text-coral-deep mb-2">Why Room for Wonder</p>
@@ -32,8 +32,8 @@ function About() {
           </p>
         </div>
         <img
-          src="/images/8496484F-4EB2-4241-BAF0-F36646CF58B4_1_102_o.jpeg"
-          alt="Guests blowing confetti in front of Cinderella Castle at Walt Disney World"
+          src="/images/3DAF4174-5B50-4585-A004-E86890C175B3IMG_7999.jpg"
+          alt=""
           className="w-full rounded-3xl object-cover max-h-[600px]"
         />
       </div>

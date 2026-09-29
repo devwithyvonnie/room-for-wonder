@@ -9,7 +9,7 @@ const steps = [
 
 function HowItWorks() {
   return (
-    <div className="px-8 py-20 max-w-6xl mx-auto">
+    <div className="px-8 max-w-6xl mx-auto">
       <p className="font-script text-4xl text-coral-deep mb-2">What to expect</p>
       <h1 className="font-display text-5xl text-ink mb-12">Planning Made Easier</h1>
 

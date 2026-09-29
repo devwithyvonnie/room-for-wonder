@@ -10,7 +10,7 @@ function Nav() {
     { to: "/about", label: "About" },
     { to: "/team", label: "Meet the Team" },
     { to: "/destinations", label: "Destinations" },
-    { to: "/kind-words", label: "Kind Words" },
+    { to: "/from-our-guests", label: "From Our Guests" },
     { to: "/faqs", label: "FAQs" },
   ];
 

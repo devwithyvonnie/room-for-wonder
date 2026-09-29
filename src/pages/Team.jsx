@@ -3,7 +3,7 @@ import { agents } from "../data/agents";
 
 function Team() {
   return (
-    <div className="px-8 py-20 max-w-6xl mx-auto">
+    <div className="px-8 max-w-6xl mx-auto">
       <p className="font-script text-4xl text-coral-deep mb-2">
         The People Behind Room for Wonder
       </p>
@@ -34,9 +34,9 @@ function Team() {
             <p className="font-body text-sm text-ink mb-3">{agent.specialty}</p>
 
             <Link
-              to={`/request-a-quote?agent=${agent.id}`}
+              to={`/team/${agent.id}`}
               className="font-body text-sm text-coral-deep underline">
-              Work with {agent.name.split(" ")[0]}
+              Learn More About {agent.name.split(" ")[0]}
             </Link>
           </div>
         ))}
