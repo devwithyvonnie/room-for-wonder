@@ -111,10 +111,23 @@ function RequestQuote() {
 
   function handleChange(e) {
     const { name, value, type, checked } = e.target;
-    setForm((prev) => ({
-      ...prev,
-      [name]: type === "checkbox" ? checked : value,
-    }));
+  
+    setForm((prev) => {
+      const updated = {
+        ...prev,
+        [name]: type === 'checkbox' ? checked : value,
+      };
+  
+      if (name === 'arrivalDate' && value && !prev.departureDate) {
+        const arrival = new Date(value);
+        const year = arrival.getFullYear();
+        const month = String(arrival.getMonth() + 1).padStart(2, '0');
+        const day = String(arrival.getDate() + 2).padStart(2, '0');
+        updated.departureDate = `${year}-${month}-${day}`;
+      }
+  
+      return updated;
+    });
   }
 
   function togglePriority(option) {
