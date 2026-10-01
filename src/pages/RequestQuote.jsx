@@ -39,7 +39,7 @@ const budgetFlexibilityOptions = [
 const initialForm = {
   parentName: "",
   email: "",
-  phone: "",
+  phone: "", 
   hearAboutUs: "",
   referral: "",
   numAdults: "",
@@ -99,12 +99,31 @@ function Field({ label, name, className = "", ...inputProps }) {
   );
 }
 
+function getDefaultDates() {
+  const today = new Date();
+  const tomorrow = new Date();
+  tomorrow.setDate(today.getDate() + 1);
+
+  const format = (date) => {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  };
+
+  return {
+    arrivalDate: format(today),
+    departureDate: format(tomorrow),
+  };
+}
+
 function RequestQuote() {
   const [searchParams] = useSearchParams();
   const preselectedAgent = searchParams.get("agent") || "";
 
   const [form, setForm] = useState({
     ...initialForm,
+    ...getDefaultDates(),
     agentId: preselectedAgent,
   });
   const [submitted, setSubmitted] = useState(false);
@@ -118,12 +137,15 @@ function RequestQuote() {
         [name]: type === 'checkbox' ? checked : value,
       };
   
-      if (name === 'arrivalDate' && value && !prev.departureDate) {
-        const arrival = new Date(value);
-        const year = arrival.getFullYear();
-        const month = String(arrival.getMonth() + 1).padStart(2, '0');
-        const day = String(arrival.getDate() + 2).padStart(2, '0');
-        updated.departureDate = `${year}-${month}-${day}`;
+      if (name === 'arrivalDate' && value) {
+        const [year, month, day] = value.split('-').map(Number);
+        const departure = new Date(year, month - 1, day);
+        departure.setDate(departure.getDate() + 2);
+      
+        const newYear = departure.getFullYear();
+        const newMonth = String(departure.getMonth() + 1).padStart(2, '0');
+        const newDay = String(departure.getDate()).padStart(2, '0');
+        updated.departureDate = `${newYear}-${newMonth}-${newDay}`;
       }
   
       return updated;
