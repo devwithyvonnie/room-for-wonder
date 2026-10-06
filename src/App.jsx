@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
+import PageTitle from './components/PageTitles';
 import Home from './pages/Home.jsx';
 import HowItWorks from './pages/HowItWorks.jsx';
 import About from './pages/About.jsx';
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="bg-offwhite min-h-screen flex flex-col">
     <ScrollToTop />
+    <PageTitle />
     <Nav />
     <main className="flex-1">
       <Routes>

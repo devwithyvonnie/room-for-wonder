@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useParams, Link } from "react-router-dom";
 import { agents } from "../data/agents";
 import Button from "../components/ui/Buttons";
@@ -5,6 +6,12 @@ import Button from "../components/ui/Buttons";
 function AgentBio() {
   const { agentId } = useParams();
   const agent = agents.find((a) => a.id === agentId);
+
+  useEffect(() => {
+    if (agent) {
+      document.title = `${agent.name} | Room for Wonder`;
+    }
+  }, [agent]);
 
   if (!agent) {
     return (
