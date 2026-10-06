@@ -9,6 +9,8 @@ import Destinations from './pages/Destinations.jsx';
 import KindWords from './pages/FromOurGuests.jsx';
 import FAQs from './pages/FAQs.jsx';
 import RequestQuote from './pages/RequestQuote.jsx';
+import PaymentTerms from './pages/PaymentTerms';
+import TravelProtectionForm from './pages/TravelProtectionForm';
 import Nav from './components/sections/Nav.jsx';
 import Footer from './components/sections/Footer.jsx';
 
@@ -28,6 +30,8 @@ function App() {
           <Route path="/from-our-guests" element={<KindWords />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/request-a-quote" element={<RequestQuote />} />
+          <Route path="/payment-authorization-terms" element={<PaymentTerms />} />
+          <Route path="/travel-protection-acknowledgment" element={<TravelProtectionForm />} />
         </Routes>
       </main>
       <Footer />
